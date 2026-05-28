@@ -24,7 +24,7 @@ class Graph:
 
     def pathWeight(self, path: list):
         w = 0
-        for i in range(len(path) - 1):
+        for i in range(1, len(path)):
             u, v = path[i-1], path[i]
             w += self.getWeight(u, v)
         return w
