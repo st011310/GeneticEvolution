@@ -1,5 +1,6 @@
-from .. import ClassicGA, Path, Graph
-from .configue import GRAPH_FILENAME, OUTPUT_FILENAME, DEFAULT_N
+from src.graph import Path, Graph
+from src.genetic.algorithm import ClassicGA
+from .config import GRAPH_FILENAME, OUTPUT_FILENAME, DEFAULT_N
 
 import os
 

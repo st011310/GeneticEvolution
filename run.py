@@ -1,3 +1,3 @@
-from test.tsp.tests.run import run
+from test.tsp import run
 
-run(2)
+run()
