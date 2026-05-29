@@ -8,7 +8,8 @@ from .entity import Entity
 class ClassicGA:
     def __init__(self, population_size: int,
                  mutation_rate: float = 0.1,
-                 crossover_rate: float = 0.7):
+                 crossover_rate: float = 0.7,
+                 **kwargs):
         """
         Классический генетический алгоритм.
         --
@@ -132,7 +133,7 @@ class ClassicGA:
             limit = self.population_size
         self.population = self.population[:limit]
 
-    def evolve(self, generations: int, verbose: bool = False) -> Entity:
+    def evolve(self, generations: int = 100, verbose: bool = False, **kwargs) -> Entity:
         """Запуск эволюции на указанное количество поколений"""
         self.initializePopulation(self.generator)
 
